@@ -1,6 +1,6 @@
-import SimpleReact from './simpleReact';
-window.React = {};
-React.createElement = SimpleReact.createElement;
+import SimpleReact from './simpleReact'
+window.React = {}
+React.createElement = SimpleReact.createElement
 
 class Cpp extends SimpleReact.Component {
     render() {
@@ -23,7 +23,7 @@ class Bpp extends SimpleReact.Component {
 
 class App extends SimpleReact.Component {
     constructor() {
-        super();
+        super()
         this.state = {
             count: 0
         }
@@ -31,8 +31,8 @@ class App extends SimpleReact.Component {
         setInterval(() => {
             this.setState({
                 count: this.state.count + 1,
-            });
-        }, 1000);
+            })
+        }, 1000)
     }
     render() {
         return (
@@ -44,4 +44,4 @@ class App extends SimpleReact.Component {
         )
     }
 }
-SimpleReact.render(<App />, document.querySelector('#app'));
+SimpleReact.render(<App />, document.querySelector('#app'))

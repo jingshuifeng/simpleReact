@@ -2,9 +2,7 @@ const SEPARATOR = '.'
 const SUBSEPARATOR = ':'
 
 function getComponentKey(component, index) {
-  // This is where we would use the key prop to generate a unique id that
-  // persists across moves. However we're skipping that so we'll just use the
-  // index.
+
   return index.toString(36)
 }
 

@@ -1,15 +1,15 @@
-function appendChildren(node, children) {  // 多节点和单节点的兼容
+function appendChildren(node, children) {
     if (Array.isArray(children)) {
         children.forEach((child) => node.appendChild(child))
     } else {
-        node.appendChild(children);
+        node.appendChild(children)
     }
 }
 
 function empty(node) {
     [].slice.call(node.childNodes).forEach((child) => {
-        node.removeChild(child);
-    });
+        node.removeChild(child)
+    })
 }
 
 
